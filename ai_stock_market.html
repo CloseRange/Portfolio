@@ -53,7 +53,7 @@
 					<h1>AI Stock Market</h1>
 				</header>
 				<div class="content">
-					<p>Bet on the stock market using OpenAI</p>
+					<p>A JavaScript-based AI stock trading simulation that uses OpenAI and Alpaca to predict market behavior based on real-time news analysis and execute trades accordingly.</p>
 					<ul class="actions">
     <li><a href="https://github.com/CloseRange/AIStockMarket" class="button next scrolly">Visit Github</a></li>
 </ul>
@@ -92,7 +92,7 @@
 					<header class="major">
 						<h2>About AI Stock Market</h2>
 					</header>
-					<p>This project uses OpenAI and Alpaca to make predictions on how various stocks will trend over time. Alpaca provides news articles to the bot which sends them over to OpenAI and rates them from -100 to +100 based on how well it thinks that stock will trend over time.</p>
+					<p>The AI Stock Market project is an automated trading simulator developed using Node.js, OpenAI, and the Alpaca stock trading API. The program continuously pulls current news articles, processes them through OpenAI's language model, and asks it to predict how the news will influence market performance. Based on the AI's sentiment analysis and inferred market direction, the system executes simulated buy and sell orders using Alpaca. The project explores the potential of combining large language models with real-time financial data to make informed trading decisions.</p>
 				</div>
 			</section>
 
@@ -107,7 +107,7 @@
 							<header class="major">
 								<h3>Technologies</h3>
 							</header>
-							<p>The alogorithm is very basic: Alpaca gets a news article about some stock, then, based on how OpenAI thinks it will trend from -100 to +100, we add the value to that stocks 'score' Once that score reaches some threashold the stock is either bought or sold. The threasholds adjust over time increasing or decreasing depending on if we would have done better selling/buying sooner or later.</p>
+							<p>This application is built using Node.js and JavaScript, with OpenAI GPT models for natural language processing and Alpaca for market execution. It uses web scraping and API access to collect live news data, which is then summarized and interpreted by OpenAI. The model evaluates whether news is likely to affect specific stock prices and responds with buy or sell recommendations. These decisions are processed through Alpaca's paper trading API for simulated execution. The system includes logic to track portfolio performance, set trading limits, and assess historical outcomes for benchmarking prediction accuracy.</p>
 							<span class="tooltip" onclick=""><img src="images/540d0b3f-a472-4b57-aa5f-b2cfa7e1ba1c.png" /><span class="tooltiptext">AI Stock Market</span></span>
 
 <span class="tooltip" onclick=""><img src="images/413b0904-c4c8-4a89-94af-2c7e68ea5175.png" /><span class="tooltiptext">Alpaca</span></span>
@@ -135,20 +135,20 @@
 							<header class="major">
 								<h3>Development Process</h3>
 							</header>
-							<p>The project started as just a way to test out how to use Alpaca to guy and sell stocks of the stock market to make it easier to create differant bots in the future. The Chat GPT aspect didn't come in until later as a way to test the functionality of the bot.</p>
+							<p>The project began by integrating Alpaca's trading API and building a simulation environment for paper trading. News data sources were selected and parsed, then passed to OpenAI with custom prompts designed to extract actionable market insights. Iteration focused on refining the prompts to better capture financial relevance, reduce hallucinations, and handle conflicting data. The system then incorporated basic portfolio management, profit tracking, and feedback loops to evaluate the effectiveness of predictions over time. A final layer was added to filter low-confidence responses and reduce overtrading.</p>
 						</div>
 					</div>
 				</section>
 				<section>
 					<img class="image" src="images/b54ef0b0-deed-44db-91ce-81d21f0aa8b3.png" alt=""
-						style="height: auto; max-width: auto; margin: auto; max-height: 500px; object-fit: contain;"
+						style="height: auto; max-width: auto; margin: auto; max-height: 500px; object-fit: contain; "
 						data-position="center center" />
 					<div class="content">
 						<div class="inner">
 							<header class="major">
 								<h3>Usage</h3>
 							</header>
-							<p>The best way to ustlize this yourself is to visit the github page and follow the directions there. It's easy to create your own bot with diffearnt algorithms from there.</p>
+							<p>Users run the program in a Node.js environment with API keys for OpenAI and Alpaca. The app fetches the latest financial news, asks the AI to evaluate its potential market impact, and executes trades in a paper account accordingly. Users can observe each AI response, view buy/sell decisions, and monitor portfolio performance through logged data. It functions as both a sandbox for AI-influenced trading and a tool for exploring how language models interpret financial events.</p>
 						</div>
 					</div>
 				</section>
